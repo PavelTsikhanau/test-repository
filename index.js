@@ -11,53 +11,37 @@ const chooseFaculty = () => {
     })
 
     const chosenFaculty = getRandomItem(faculties);
-
     chosenFaculty.classList.add('chosen-faculty');
+
+    return chosenFaculty;
 }
 
-const myButton = document.querySelector('.sorting-btn');
-
-myButton.addEventListener('click', chooseFaculty);
-
-
-
-/*function multiply(a, b) { 
-   return a * b
-}
-console.log(multiply(1,2))
-console.log(multiply(7,8))
-
-function square(a) {
-    return a * a
-}
-console.log(square(5))
-
-function sRound(p, r) {
-   return multiply(p, square(r))
-}
-console.log(sRound(3.14, 2))
-
-function show(func) {
-    func('hello')
-}
-show(console.log)
-
-function slozhenie(func, a, b) {
-    return func(a, b)
+const form = document.querySelector('#name-input');
+form.onsubmit = (event) => {
+    event.preventDefault(); 
+    
+    // const formData = new FormData(event.target);
+    // const name = formData.get('yourName');     
+     const name = event.target.yourName.value;
+    
+    if (name.length === 0) {
+        alert('Leave the hat!')
+    } else {
+        const facultyName = chooseFaculty().innerText;
+        alert(`${name}, Goes To ${facultyName}!!!`); 
+    }   
 }
 
-let result = slozhenie(sum, 1, 2)
-console.log(result)*/
+    // const input = document.querySelector('#label');
 
-/*const myFunction = function() {
+    // input.addEventListener('keydown', (event) => {
+    //     event.preventDefault(); 
+        
+    //     const key = event.key.toUpperCase()
+    //     event.target.value = event.target.value + key
+        
+    //     console.log(key)
+    // });
 
-}
-myFunction()
-
-
-const arrow = () => {
-
-}
-arrow()*/
 
 
