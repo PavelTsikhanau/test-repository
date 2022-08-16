@@ -25,12 +25,23 @@ form.onsubmit = (event) => {
      const name = event.target.yourName.value;
     
     if (name.length === 0) {
-        alert('Leave the hat!')
+        swal({
+            title: "Peeves!",
+            text: 'STOP BOTHERING SORTING HAT!!!',
+            icon: "error",
+            button: "ROFL",
+          });
     } else {
         const facultyName = chooseFaculty().innerText;
-        alert(`${name}, Goes To ${facultyName}!!!`); 
+        swal({
+            title:`${name} goes to ${facultyName}!!!`,
+            icon: "success",
+            button: "Congratulations!",
+          });
     }   
 }
+
+
 
     // const input = document.querySelector('#label');
 

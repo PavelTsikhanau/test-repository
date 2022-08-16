@@ -10,6 +10,12 @@ main {
     
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
 .sorting-btn {
     width: 200px;
     height: 75px;
@@ -20,10 +26,17 @@ main {
     margin: 25px;
 }
 
+.students-name {
+    font: bold 2em Arial, sans-serif;
+    color: #140808;
+    text-shadow: #fff -1px -1px 0, 
+                 #140808 1px 1px 0; 
+}
+
 .faculties {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   
+
     width: 100%;
     height: 500px;
     background-color: blanchedalmond;
@@ -31,6 +44,41 @@ main {
 
 .faculty {
     width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.facultitle {
+    font: bold 3em Arial, sans-serif;
+    color: #f0f0f0;
+    text-shadow: #fff -1px -1px 0, 
+                 #333 1px 1px 0;
+}
+
+.hufflepuff {
+    background:
+    repeating-linear-gradient(45deg, 
+    yellow, yellow 30px, black 0, black 60px);
+}
+
+.gryffindor {
+    background:
+    repeating-linear-gradient(135deg, 
+    red, red 30px, gold 0, gold 60px); 
+}
+
+.ravenclow {
+    background:
+    repeating-linear-gradient(45deg, 
+    blue, blue 30px, rgb(205, 127, 50) 0, rgb(205, 127, 50) 60px);
+
+}
+
+.slytherin {
+    background:
+    repeating-linear-gradient(135deg, 
+    green, green 30px, rgb(192,192,192) 0, rgb(192,192,192) 60px); 
+
 }
 
 .chosen-faculty {
