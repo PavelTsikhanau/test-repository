@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mob.css">
     <title>Sorting Hat</title>
 </head>
 <body>
     <header>
-        <div>Hogwarts</div>
+        <div><p class="school-name" data-tooltip="School of Witchcraft and Wizardry">HOGWARTS</p></div>
     </header>
     <main>
+        <img class="wallpapers" src="./images-hogwarts/phoenix-hogwarts-castle-school-fantastic-beasts-3-hd-wallpaper-uhdpaper.com-767@0@f.jpg" alt="wallpapers">
         <form id="name-input" name="test">
             <label for="label"><p class="students-name">Student's Name</p></label>
             <input id="label" name="yourName" type="text" size="25">
-            <button type="submit" class="sorting-btn">Sorting Hat</button>
+            <button type="submit" style="background-image: url(./images-hogwarts/the_sorting_hat_by_sahinduezguend47mwt5-o.png); background-size: 100%;" class="sorting-btn"></button>
         </form>    
         <div class="faculties">
-            <div class="faculty hufflepuff"><p class="facultitle">Hufflepuff</p></div>
-            <div class="faculty gryffindor"><p class="facultitle">Gryffindor</p></div>
-            <div class="faculty ravenclow"><p class="facultitle">Ravenclow</p></div>
-            <div class="faculty slytherin"><p class="facultitle">Slytherin</p></div>
+            <div class="faculty hufflepuff"><p class="facultitle facultitle-mob">Hufflepuff</p></div>
+            <div class="faculty gryffindor"><p class="facultitle facultitle-mob">Gryffindor</p></div>
+            <div class="faculty ravenclow"><p class="facultitle facultitle-mob">Ravenclow</p></div>
+            <div class="faculty slytherin"><p class="facultitle facultitle-mob">Slytherin</p></div>
         </div>
     </main>
     <footer></footer>

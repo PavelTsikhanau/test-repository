@@ -36,10 +36,12 @@ form.onsubmit = (event) => {
         swal({
             title:`${name} goes to ${facultyName}!!!`,
             icon: "success",
-            button: "Congratulations!",
+            button: "Y E A H !",
           });
     }   
 }
+
+
 
 
 

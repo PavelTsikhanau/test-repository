@@ -1,55 +1,118 @@
+* {
+    margin:0;
+    padding:0;
+    }
+    
 header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100px;
-    background-color: rgba(233, 218, 5, 0.5);
+    background-color: rgba(146, 139, 36, 0.4);
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;  
+}
+
+.wallpapers {
+   
+   margin-bottom: -833px;
+}
+
+.school-name {
+    position: relative;
+    font: bold 4em Arial, sans-serif;
+    color: rgba(129, 122, 18, 0.5);
+    text-shadow: #fff -1px -1px 0, 
+                 rgba(129, 122, 18, 0.5) -1px -1px 0; 
+    opacity: 1;
+}
+
+.school-name:hover  {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+.school-name:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 55px;
+    left: -35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    background-color: white;
 }
 
 form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding: 25px;
+    opacity: 0.85;
 }
 
-.sorting-btn {
-    width: 200px;
-    height: 75px;
-    border-radius: 10px;
-    border: 1px solid black ;
-    background-color: rgba(180, 92, 10, 0.8);
+input{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
 
-    margin: 25px;
+#label {
+    width: 240px;
+}
+
+button {
+    -webkit-transition: all 0.7s ease;;
+    -moz-transition: all 0.7s ease;;
+    -o-transition: all 0.7s ease;;
+    transition: all 0.7s ease;
+} 
+
+.sorting-btn {
+    border-radius: 5%;
+    width: 248px;
+    height: 197px;    
+}
+
+.sorting-btn:hover {
+    box-shadow: inset 0 0 0 20px rgb(34, 33, 33, 0.7);
+    border-radius: 50%;
 }
 
 .students-name {
     font: bold 2em Arial, sans-serif;
-    color: #140808;
+    color: rgba(129, 122, 18, 0.5);
     text-shadow: #fff -1px -1px 0, 
-                 #140808 1px 1px 0; 
+                 rgba(129, 122, 18, 0.5) 1px 1px 0; 
 }
 
 .faculties {
     display: flex;
-   
-
+    justify-content: space-between;
     width: 100%;
     height: 500px;
-    background-color: blanchedalmond;
 }
 
 .faculty {
-    width: 25%;
+    width: 24.7%;
     display: flex;
     justify-content: center;
+    padding-top: 10%;
 }
 
-.facultitle {
-    font: bold 3em Arial, sans-serif;
+.facultitle { 
+    font: bold 2.2em Arial, sans-serif;
     color: #f0f0f0;
     text-shadow: #fff -1px -1px 0, 
                  #333 1px 1px 0;
@@ -58,7 +121,7 @@ form {
 .hufflepuff {
     background:
     repeating-linear-gradient(45deg, 
-    yellow, yellow 30px, black 0, black 60px);
+    rgba(255, 238, 0, 0.911), rgba(255, 238, 0, 0.911) 30px, rgb(20, 20, 20, 0.95) 0, rgb(20, 20, 20, 0.95) 60px);
 }
 
 .gryffindor {
@@ -70,18 +133,22 @@ form {
 .ravenclow {
     background:
     repeating-linear-gradient(45deg, 
-    blue, blue 30px, rgb(205, 127, 50) 0, rgb(205, 127, 50) 60px);
+    darkblue, darkblue 30px, rgb(205, 127, 50) 0, rgb(205, 127, 50) 60px);
 
 }
 
 .slytherin {
     background:
     repeating-linear-gradient(135deg, 
-    green, green 30px, rgb(192,192,192) 0, rgb(192,192,192) 60px); 
+    green, green 30px, rgba(192, 192, 192, 0.719) 0, rgba(192, 192, 192, 0.719) 60px); 
 
 }
 
 .chosen-faculty {
     background: mediumseagreen;
+    font: bold 1.5em Arial, sans-serif;
+    color: #f0f0f0;
+    text-shadow: #fff -1px -1px 0, 
+                 black 1px 1px 0;
 }
 
