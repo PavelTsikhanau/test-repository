@@ -4,7 +4,7 @@
     }
     
 header {
-    position: absolute;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ main {
     opacity: 1;
 }
 
-.school-name:hover  {
+ .school-name:hover  {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -42,17 +42,17 @@ main {
     -moz-transition: all 0.5s ease;;
     -o-transition: all 0.5s ease;;
     transition: all 0.5s ease;
-}
+} 
 
-.school-name:hover:before {
+ .school-name:hover:before {
     content: attr(data-tooltip);
     position: absolute;
-    top: 55px;
-    left: -35px;
+    margin-top: 50px;
+    margin-left: -50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     background-color: white;
-}
+} 
 
 form {
     display: flex;
