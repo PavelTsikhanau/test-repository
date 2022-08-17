@@ -2,6 +2,11 @@
     margin:0;
     padding:0;
     }
+
+body {
+    display: flex;
+    justify-content: center;
+}
     
 header {
     position: absolute;
@@ -17,12 +22,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;  
+    align-content: center; 
+    
 }
 
 .wallpapers {
-   
-   margin-bottom: -833px;
+    z-index: -1;
+   width: 100%; 
 }
 
 .school-name {
@@ -59,7 +65,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
+  
     opacity: 0.85;
 }
 
@@ -69,7 +75,7 @@ input{
 }
 
 #label {
-    width: 240px;
+    width: 210px;
 }
 
 button {
@@ -81,8 +87,8 @@ button {
 
 .sorting-btn {
     border-radius: 5%;
-    width: 248px;
-    height: 197px;    
+    width: 210px;
+    height: 167px;    
 }
 
 .sorting-btn:hover {
