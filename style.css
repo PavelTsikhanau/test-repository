@@ -109,8 +109,29 @@ button {
     display: flex;
     justify-content: center;
     padding-top: 10%;
-
     background: rgba(218, 165, 32, 0.411);
+}
+
+.faculty:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+    border-radius: 5%;
+}
+
+.faculty:hover:before { 
+    content: attr(data-tooltip);
+    position: absolute;
+    margin: 50px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
 }
 
 .facultitle { 
@@ -143,16 +164,7 @@ button {
     background:
     repeating-linear-gradient(135deg, 
     green, green 30px, rgba(192, 192, 192, 0.719) 0, rgba(192, 192, 192, 0.719) 60px); 
-
 }
-
-/* .chosen-faculty {
-    background: mediumseagreen;
-    font: bold 1.5em Arial, sans-serif;
-    color: #f0f0f0;
-    text-shadow: #fff -1px -1px 0, 
-                 black 1px 1px 0;
-} */
 
 .popup {
     position: fixed;

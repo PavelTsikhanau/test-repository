@@ -57,8 +57,13 @@ uncorrectAnswers.forEach((answer) => {
             button: "Please, give me one more chanse!",
         });
     })
-})
+});
 
+const dataTooltip = document.querySelector('data-tooltip');
+
+dataTooltip.addEventListener('mouseover', () => {
+
+})
 
 
 
